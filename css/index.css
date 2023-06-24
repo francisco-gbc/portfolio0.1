@@ -1,0 +1,484 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    text-decoration: none;
+    font: inherit;
+    outline:0;
+   /* vertical-align:baseline;*/
+   /*display:flex;*/
+   font-family: 'Montserrat', sans-serif;
+   
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+a:visited {
+    color: inherit; /* ou defina uma nova cor específica */
+  }
+:root{
+    --black30:rgb(30,30,30);
+    --black3040:rgb(30,30,30,0.4);
+    --white: rgb(255, 255, 255);
+
+}
+body{
+   /* border: 2px solid red;*/
+    max-width:100vw;
+    min-height: 100vh;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight:700;
+}
+/*Scroll------------------------------*/
+
+body::-webkit-scrollbar {
+    width: 10px;               
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);       
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color:var(--black3040);    
+    border-radius: 20px;       
+  }
+  
+
+/*Nav-----------------------------------*/
+nav{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -60px;
+    color: var(--white);
+    z-index: 2;
+}
+
+
+.menu_lista{
+    display: none;
+}
+
+  .logo {
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+    background-image: url('../assets/logo/logo_gif4.gif');
+    background-repeat: no-repeat;
+  }
+  
+.botao_menu{
+    background-color: rgba(255, 255, 255, 0);
+    display: none;
+    min-width: 120px;
+    min-height: 120px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button{
+    background-color: rgba(255, 255, 255, 0);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    
+    min-width: 120px;
+    min-height: 120px;
+
+}
+
+.menu_imagem{
+    max-width: 30px;
+
+}
+
+  .button p{
+    width: 260px;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(30, 30, 30);
+    font-weight: 700;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 30px;
+    transition: 0.5s;
+    
+}
+
+.button:hover{
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+
+
+/*Main-----------------------------------*/
+main{
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.perfil{
+   /* background-color: rgba(30, 30, 30, 0.223);*/
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    border-radius: 150px;
+    margin-bottom: -340px;
+    flex-direction: column;
+    z-index:2;
+    color: var(--white);
+    text-align: center;
+    transition: 0.5s;
+}
+
+
+.foto_perfil{
+    background-color:var(--black30);
+    border-radius: 50%;
+    min-height: 250px;
+    min-width: 250px;
+    max-height: 250px;
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#foto{
+    max-width: 95%;
+    max-height: 95%;
+    border-radius: 50%;
+}
+
+.nome{
+    margin-top: 15px;
+    font-weight: 700;
+    margin-bottom: 5px;
+
+}
+.funcao{
+    margin-bottom: 40px;
+    font-size: 1em;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--white);
+    margin-top: -40px;
+    margin-bottom: 20px;
+    z-index: 2;
+    /*padding: 10px;
+    border-radius: 10px;
+    background-color: var(--black3040);*/
+}
+.corpo{
+    max-width: 100%;
+    flex-direction: column;
+    display: flex;
+    min-width: 100%;
+    align-items: center;
+}
+
+#cimaMeio{
+    height: 150px;
+    width: 300px;
+}
+.cima{
+    display: flex;
+    align-items: start;
+    margin-top: 20px;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    color: var(--white);
+}
+
+.cimabutton{
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(30, 30, 30);
+    font-weight: 700;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.cimabutton:hover{
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+
+
+.baixo{
+   /* background-color: rgba(30, 30, 30, 1);
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    color:white;
+    margin-top: -90px;*/
+    min-width: 100%;
+    min-height: 60vh;
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    color:white;
+    margin-top: -90px;
+}
+
+#bg-video {
+    z-index: -1;
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    color:rgb(0, 0, 0);
+  }
+
+  .baixo{
+    background:
+    linear-gradient(
+        rgba(30,30,30,1),rgba(30,30,30,0.8),rgba(30,30,30,1)
+      );
+    
+      background-size:100%;
+      background-position: center;
+      transition: 0.5s;
+}
+.baixo:hover{
+    background:
+    linear-gradient(
+        rgba(30,30,30,1),rgba(30, 30, 30, 0),rgba(30,30,30,1)
+      );
+    background-size:110%;
+    transition: 0.5s;
+}
+.sobre{
+    margin-bottom: 20px ;
+    font-weight: 700;
+    font-size: 1.1em;
+    text-align: center;
+    max-width: 90%;
+    text-align: center;
+}
+
+.balao{
+    
+    font-size: 1em;
+    max-width: 1200px;
+    background-color: white;
+    color: rgb(30, 30, 30);
+    border-radius: 20px;
+    margin-top: 30px;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto_sobre{
+    margin-bottom: 40px;
+}
+
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+
+}
+
+.empresas{
+    max-width: 100%;
+    display: flex;
+    min-height: 80px;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.empresas img{
+    max-height: 60px;
+    max-width: 100%; 
+}
+
+
+/*footer--------------*/
+footer{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.social img{
+    max-height: 20px;
+    margin: 8px;
+    opacity: 0.5;
+    transition: 0.2s;
+}
+.social img:hover{
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+a, button {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-focus-ring-color: transparent;
+    outline: none;
+}
+
+/*Animação de tela-------------------------*/
+
+.page-transition {
+    animation: slide-in 0.5s ease-out;
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+
+/*Responsividade--------------------------*/
+
+@media (max-width: 1100px){
+   
+    .empresas{
+        gap:15px;
+    }
+   .empresas img{
+    
+    max-width:20%;
+   }
+   .empresas .exercito{
+    max-width: 5%;
+   }
+   .skills{
+    font-size: 0.9em;
+   }
+
+   .balao{
+    max-width: 90%;
+   }
+
+   .baixo{
+          background-size:auto 100%;
+      background-position: center;
+      
+}
+.baixo:hover{
+    background-size:auto 110%;
+}
+    
+    }
+
+    @media (max-width: 900px){
+        nav{
+            margin-bottom: -55px;
+        }
+        .foto_perfil{
+            min-height: 200px;
+            min-width: 200px;
+            max-height: 200px;
+            max-width: 200px;
+            transition: 0.5s;
+        }
+
+        .button{
+            max-width: 60px;
+            background-color: rgba(255, 255, 255, 0);
+            transition: 0s;
+        }
+        .button p{
+         display: none;
+        }   
+        .botao_menu{
+            display: flex;
+        }
+
+        .cimabutton{
+            display: none;
+        }
+
+        .balao{
+            font-size: 0.8em;
+        }
+
+        #bg-video {
+                       
+            
+            min-width: none;
+            min-height: 100%;
+          }
+          .baixo{
+            min-height: 100%;
+          }
+ }
+
+    @media (max-width: 700px){
+
+        .empresas{
+            gap:10px;
+        }
+       .empresas img{
+        max-width:20%;
+       }
+       .skills{
+        font-size: 0.7em;
+       }
+
+    }
+
+        /*Mobile----------------------*/
+    @media (max-width: 550px){
+
+           .skills{
+            font-size: 0.7em;
+           }   
+    }
