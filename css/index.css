@@ -78,6 +78,10 @@ nav{
     background-image: url('../assets/logo/logo_gif4.gif');
     background-repeat: no-repeat;
   }
+
+  .logo:hover{
+    opacity: 0.8;
+  }
   
 .botao_menu{
     background-color: rgba(255, 255, 255, 0);
@@ -455,6 +459,10 @@ a, button {
           }
           .baixo{
             min-height: 100%;
+          }
+
+          .logo:hover{
+            opacity: 1;
           }
  }
 
