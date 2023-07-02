@@ -95,7 +95,7 @@ nav{
     display: flex;
     transform: 5s;
     border-radius: 30px;
-    padding: 0 20px; 
+    padding: 0 35px; 
     
     max-width: none;
     justify-content: start;
@@ -105,7 +105,7 @@ nav{
 
 #legenda_contato{
     display: flex;
-    margin-left: 10px;
+    margin-left: 15px;
     color: white;
     font-weight: 700;
     text-transform: uppercase;
