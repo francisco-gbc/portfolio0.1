@@ -573,10 +573,32 @@ a, button {
         button .botao_menu{
             max-width: 10px ;
         }
+        .menu_imagem{ 
+            max-width: 14px;
+        
+        }
+        .botao_menu{
+            padding: 0 15px;
+        }
     }
 
-    @media (max-width: 550px){
+    @media (max-width: 400px){
+        .menu_imagem{ 
+            max-width: 14px;
+        
+        }
+        .botao_menu{
+            padding: 0 15px;
+        }
+    }
+
+    @media (max-width: 375px){
         #legenda_contato{
             display: none;
         }
+        .menu_imagem{ 
+            max-width: 18px;
+        
+    
     }
+}
