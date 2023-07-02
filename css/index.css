@@ -113,11 +113,6 @@ nav{
 
 }
 
-.botao_menu:hover #legenda_contato{
-    display: flex;
-    transition: 1s;
-}
-
 
 .botao_menu:hover {
     max-width: none;
