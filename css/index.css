@@ -482,6 +482,11 @@ a, button {
 
         /*Mobile----------------------*/
     @media (max-width: 550px){
+         .logo {
+            height: 80px;
+            width: 80px;
+            
+          }
 
            .skills{
             font-size: 0.7em;
