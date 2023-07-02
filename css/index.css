@@ -118,9 +118,7 @@ nav{
     max-width: none;
     justify-content: start;
     cursor: pointer;
-    opacity: 0.8; 
-    
-    
+    opacity: 0.8;     
 }
 
 
@@ -522,6 +520,20 @@ a, button {
     }
 
         /*Mobile----------------------*/
+    @media (pointer: coarse) {
+
+        .button:hover{
+            opacity: 1;
+        }
+
+        .botao_menu:hover {
+            opacity: 1;     
+        }
+        
+
+    }
+
+
     @media (max-width: 550px){
         #legenda_contato{
             font-size: 0.6em;
