@@ -85,14 +85,7 @@ nav{
     min-width: 33%;
 }
 
-.li_contatos{
-    max-width: 33%;
-    min-width: 33%;
-    display: flex;
-    align-items: center;
-    justify-content: end;
 
-}
 
 nav li{
     display: inline-block;
@@ -137,6 +130,61 @@ nav li a{
 display: block;
 opacity: 0.95;
 }
+
+/*Contato---*/
+
+.li_contatos{
+    max-width: 33%;
+    min-width: 33%;
+
+    align-items: center;
+    display: flex;
+    justify-content: end;
+
+}
+
+.li_contatos .botao_menu{
+    display: flex;
+    min-height: 40px;
+    max-height: 40px;
+    margin-right: 15px;
+    align-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    transform: 5s;
+    border-radius: 30px;
+    padding: 0 35px; 
+    
+    max-width: none;
+    justify-content: start;
+    background-color:var(--black30);
+    color: white;
+}
+
+
+.li_contatos #legenda_contato{
+    display: flex;
+    margin-left: 15px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9em;
+
+}
+
+.li_contatos .botao_menu:hover {
+    max-width: none;
+    justify-content: start;
+    cursor: pointer;
+    opacity: 0.8;     
+}
+
+.li_contatos .menu_imagem{ 
+    max-width: 18px;
+
+}
+
 
 
 /*--------------------*/
@@ -410,8 +458,8 @@ a, button {
             margin-bottom: -55px;
         }
         .logo {
-            height: 50px;
-            width: 50px;
+            height: 90px;
+            width: 90px;
             
           }
 
@@ -451,7 +499,53 @@ a, button {
     }
 
         /*Mobile----------------------*/
-    @media (max-width: 550px){
+   
+        /*Mobile----------------------*/
+        @media (pointer: coarse) {
 
-      
+            .li_contatos .button:hover{
+                opacity: 1;
+            }
+    
+            .li_contatos .botao_menu:hover {
+                opacity: 1;     
+            }
+            
+    
+        }
+    
+    
+        @media (max-width: 550px){
+            .li_contatos #legenda_contato{
+                font-size: 0.6em;
+            }
+            
+            .logo{
+                max-width: 50px;
+                max-height: 50px;
+            }
+        
+     
+              .li_contatos .botao_menu{
+                max-width: 10px ;
+            }
+            .li_contatos .menu_imagem{ 
+                max-width: 14px;
+            
+            }
+            .li_contatos .botao_menu{
+                padding: 0 15px;
+            }
+        }
+    
+        @media (max-width: 375px){
+            .li_contatos #legenda_contato{
+                display: none;
+            }
+            .li_contatos .menu_imagem{ 
+                max-width: 18px;
+            }
+            .li_contatos .botao_menu{
+                padding: 0 10px;
+            }
     }
