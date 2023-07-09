@@ -305,6 +305,10 @@ main{
     display: flex;
 }
 
+.img-dev{
+    max-width: 80%;
+}
+
 .slides input{
     display: none;
 }
