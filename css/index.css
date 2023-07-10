@@ -87,19 +87,15 @@ nav{
 
 .botao_menu{
     display: flex;
-    min-height: 40px;
-    max-height: 40px;
+    min-height: 30px;
+    max-height: 30px;
     margin-right: 20px;
     align-items: center;
     align-items: center;
     display: flex;
     transform: 5s;
     border-radius: 30px;
-    padding: 0 35px; 
     
-    max-width: none;
-    justify-content: start;
-    background-color:var(--black30);
 }
 
 
@@ -129,7 +125,7 @@ nav{
 }
 
 .menu_imagem{ 
-    max-width: 18px;
+    max-width: 30px;
 
 }
 
@@ -209,6 +205,13 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    transition: 1s;
+}
+
+.foto_perfil:hover{
+    transition: 1s;
+    background-color:#ffffff;
 }
 
 #foto{
@@ -378,6 +381,34 @@ main{
 .empresas img{
     max-height: 60px;
     max-width: 100%; 
+}
+
+.contatos_button{
+    width: 200px;
+    height: 40px;
+    max-width: 100%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(30, 30, 30);
+    font-weight: 700;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.contatos{
+    color: white;
+    margin-top: 50px;
+    max-width: 80%;
+}
+
+.contatos:hover{
+    opacity: 0.8;
 }
 
 
@@ -582,11 +613,8 @@ a, button {
             max-width: 10px ;
         }
         .menu_imagem{ 
-            max-width: 14px;
+            max-width: 25px;
         
-        }
-        .botao_menu{
-            padding: 0 15px;
         }
     }
 
@@ -595,9 +623,6 @@ a, button {
             display: none;
         }
         .menu_imagem{ 
-            max-width: 18px;
-        }
-        .botao_menu{
-            padding: 0 10px;
+            max-width: 20px;
         }
 }

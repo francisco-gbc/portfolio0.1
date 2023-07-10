@@ -57,12 +57,6 @@ body::-webkit-scrollbar {
  
 /*Nav-----------------------------------*/
 nav{
-   min-width: 100%;
-   z-index: 2;
-}
-
-
-.dropdown{
     width: 100%;
     max-width: 100%;
     display: flex;
@@ -70,12 +64,23 @@ nav{
     align-items: center;
     margin-bottom: -60px;
     color: var(--white);
+    z-index: 2;
 }
 
-.li_menu{
-    min-width: 33%;
-    display: block;
-}
+
+.logo {
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+    background-image: url('../assets/logo/logo_gif4.gif');
+    background-repeat: no-repeat;
+    margin-left: -6px;
+  }
+
+  .logo:hover{
+    opacity: 0.8;
+  }
+
 
 .li_logo{
     display:flex;
@@ -84,52 +89,46 @@ nav{
     flex-direction: row;
     min-width: 33%;
 }
-
-
-
-nav li{
-    display: inline-block;
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    transition: all 0.3s ease;
 }
 
-nav li a{
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-}
-
-
-
-.dropdown-menu{
-    position:absolute;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 2px 20px 20px 20px ;
-    display: none;
-    min-width: 140px;
-    margin-left: 15px;
-    padding: 12px 0 14px 0;
-    z-index: 2;
-    background-color: var(--white);
-}
-
-.dropdown-menu a{
-    display: block;
-    color: black;
-}
-
-.dropdown-menu a:hover{
-    background-color: rgba(0, 0, 0, 0.1);
+.menu img{
+    max-width: 40px;
 }
 
 .menu:hover{
-    opacity: 0.8;
-    transition: 0.2s;
+    opacity: 0.6;
+    transform: rotate(90deg);
 }
 
-.li_menu:hover .dropdown-menu{
-display: block;
-opacity: 0.95;
+.menu_bar{
+    margin-top: 60px;
+    background-color: var(--black30);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
 }
+
+.menu_bar li{
+    text-transform: uppercase;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.menu_bar li:hover{
+    opacity: 0.8;
+}
+
+
+
 
 /*Contato---*/
 
@@ -263,7 +262,7 @@ main{
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 25px;
 }
 
 .titulo{
@@ -494,6 +493,11 @@ a, button {
             font-size: 0.6em;
             
         }
+
+        .menu_bar{
+            align-items: center;
+            justify-content: center;
+        }
  }
 
     @media (max-width: 700px){
@@ -524,11 +528,12 @@ a, button {
                 font-size: 0.6em;
             }
             
-            .logo{
-                max-width: 50px;
-                max-height: 50px;
-            }
-        
+            .logo {
+                height: 80px;
+                width: 80px;
+                margin-left: 2px;
+                
+              }
      
               .li_contatos .botao_menu{
                 max-width: 10px ;
@@ -539,6 +544,12 @@ a, button {
             }
             .li_contatos .botao_menu{
                 padding: 0 15px;
+            }
+            .menu_bar{
+                font-size: 0.7em;
+            }
+            .menu_bar li{
+                padding: 10px;
             }
         }
     
@@ -552,4 +563,15 @@ a, button {
             .li_contatos .botao_menu{
                 padding: 0 10px;
             }
+            .menu_bar li{
+                padding: 5px;
+            }
+
+.titulo h1{
+    font-size: 1.2em;
+  
+}
+.titulo h2{
+    font-size: 1em;
+}
     }
