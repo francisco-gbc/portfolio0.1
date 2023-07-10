@@ -551,11 +551,13 @@ a, button {
                 padding: 0 15px;
             }
             .menu_bar{
-                font-size: 0.7em;
+                font-size: 0.8em;
+                justify-content: space-between;
             }
             .menu_bar li{
                 padding: 15px;
             }
+
         }
     
         @media (max-width: 375px){
@@ -568,9 +570,7 @@ a, button {
             .li_contatos .botao_menu{
                 padding: 0 10px;
             }
-            .menu_bar li{
-                padding: 10px;
-            }
+           
 
 .titulo h1{
     font-size: 1.2em;
