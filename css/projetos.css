@@ -507,7 +507,13 @@ a, button {
 
     @media (max-width: 700px){
 
-     
+        .menu_bar{
+            font-size: 1em;
+            justify-content: space-between;
+        }
+        .menu_bar li{
+            padding: 25px;
+        }
 
     }
 
