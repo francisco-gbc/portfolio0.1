@@ -383,6 +383,12 @@ main{
     max-width: 100%; 
 }
 
+a{
+
+    text-decoration: none;
+
+}
+
 .contatos_button{
     width: 200px;
     height: 40px;
