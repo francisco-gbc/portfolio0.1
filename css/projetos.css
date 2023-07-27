@@ -30,6 +30,7 @@ body{
     
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     
 }
@@ -39,6 +40,8 @@ h1{
     font-style: italic;
     font-weight:700;
 }
+
+
 /*Scroll------------------------------*/
 
 body::-webkit-scrollbar {
@@ -57,12 +60,12 @@ body::-webkit-scrollbar {
  
 /*Nav-----------------------------------*/
 nav{
-    width: 100%;
-    max-width: 100%;
+    width: 80%;
+    max-width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: -60px;
+    margin-bottom: 60px;
     color: var(--white);
     z-index: 2;
 }
@@ -108,11 +111,10 @@ nav{
 
 .menu_bar{
     margin-top: 60px;
-    background-color: var(--black30);
-    color: white;
+    color: var(--black30);
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     list-style: none;
 }
 
@@ -261,14 +263,21 @@ a{
 
 
 /*Main-----------------------------------*/
-main{
-    min-height: 100vh;
-    min-width: 100%;
+.bloco_cards{
+    min-height: 100%;
+    max-width: 75%;
+    gap: 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: start;
+    align-items: flex-start;
+    
+}
+
+.card{
+    max-width: 30%;
+    display: flex;
     align-items: center;
-    margin-top: 25px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
 }
 
 .titulo{
@@ -311,7 +320,7 @@ main{
 }
 
 .img-dev{
-    max-width: 80%;
+    max-width: 100%;
 }
 
 .slides input{
